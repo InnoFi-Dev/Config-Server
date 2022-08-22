@@ -3,7 +3,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: https://innofi-service-registry.herokuapp.com/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
     instance:
-      hostname: https://innofi-service-registry.herokuapp.com
+      hostname: localhost
