@@ -1,10 +1,10 @@
 eureka:
   instance:
-    hostname: innofi-service-registry.herokuapp.com
-    # hostname: localhost
+    # hostname: innofi-service-registry.herokuapp.com
+    hostname: localhost
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: https://${eureka.instance.hostname}:8761/eureka/
-      # defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+      # defaultZone: https://${eureka.instance.hostname}:8761/eureka/
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
