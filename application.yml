@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: innofi-service-registry.herokuapp.com
+    #hostname: innofi-service-registry.herokuapp.com
     hostname: localhost
   client:
     registerWithEureka: true
