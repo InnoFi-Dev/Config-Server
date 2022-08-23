@@ -6,4 +6,4 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
     instance:
-      hostname: localhost
+      hostname: innofi-service-registry.herokuapp.com
