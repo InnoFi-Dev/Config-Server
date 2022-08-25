@@ -1,8 +1,9 @@
 eureka:
   instance:
-    hostname: innofi-service-registry.herokuapp.com
+    hostname: ec2-18-237-57-72.us-west-2.compute.amazonaws.com
+
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: https://${innofi-service-registry.herokuapp.com:http://localhost:8761/eureka}
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
