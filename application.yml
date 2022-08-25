@@ -1,9 +1,9 @@
 eureka:
   instance:
-    hostname: ec2-18-237-57-72.us-west-2.compute.amazonaws.com
-
+    prefer-ip-address: true
+    hostname: http://18.237.57.72:8761/
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: ec2-18-237-57-72.us-west-2.compute.amazonaws.com:8761/eureka/
+      defaultZone: http://18.237.57.72:8761/eureka/
