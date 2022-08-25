@@ -1,6 +1,6 @@
 eureka:
   instance:
-    prefer-ip-address: true
+    preferIpAddress: true
     hostname: http://18.237.57.72:8761/
   client:
     registerWithEureka: true
